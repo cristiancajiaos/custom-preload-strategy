@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomPreloadingStrategy } from './core/custom-preloading-strategy';
 import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
@@ -14,7 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CustomPreloadingStrategy],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
